@@ -91,7 +91,7 @@ int main() {
     dll.append(20);
     dll.append(5);
 
-    cout << "Original list: ";
+    cout << "Original list: \n";
     dll.printList();  // Display the list before sorting
 
     Node* last = getLastNode(dll.head);  // Get the last node of the list
