@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-// structure for doubly linked list
+// Structure for doubly linked list
 struct Node {
-    int data;        // Data held by the node
+    int data;
     Node* next;
     Node* prev;
 
@@ -16,12 +16,12 @@ public:
     Node* head;
     Node* tail;
 
-    // Initializes an empty doubly linked list
+    // Initialize an empty doubly linked list
     DoublyLinkedList() : head(nullptr), tail(nullptr) {}
 
     // Function to add a node to the end of the list
     void append(int value) {
-        Node* newNode = new Node(value); // Create a new node
+        Node* newNode = new Node(value); // Create a node
         if (head == nullptr) {
             // If the list is empty set both head and tail to the new node
             head = newNode;
